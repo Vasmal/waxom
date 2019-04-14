@@ -1,0 +1,111 @@
+@import url(fonts.css);
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat Light", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {
+  background-color: #363636;
+  color: #fff;
+  height: 1024px;
+  overflow: hidden;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  max-width: 770px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-link {
+  margin-right: 30px;
+}
+
+.logo-img {
+  display: block;
+}
+
+.nav__menu-wrapper {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+}
+
+.nav__menu {
+  width: 100%;
+  max-width: 640px;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.nav__link {
+  display: block;
+  padding: 15px 0;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #c7b299; 
+}
+
+.nav__buttons-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.nav__buttons-item {
+  height: 24px;
+}
+
+.nav__buttons-item a  {
+  display: block;
+  height: 24px;
+}
+
