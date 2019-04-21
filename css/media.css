@@ -134,6 +134,15 @@
     line-height: 18px;
     padding: 12px 24px;
   }
+
+  .cta-flex {
+    flex-direction: column;
+  }
+
+  .left-block {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 740px) {
@@ -162,6 +171,31 @@
 
   .services__item {
     width: 100%;
+  }
+
+  .promo__list {
+    padding: 0;
+  }
+
+  .promo__item {
+    position: static;
+    transform: translateX(0);
+    width: 100%;
+    text-align: center;
+  }
+
+  .promo__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .promo__cta h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .promo__cta-text {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -222,5 +256,23 @@
   section p {
     font-size: 10px;
     line-height: 18px;
+  }
+
+  .promo__cta h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .promo__cta-text {
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .left-block {
+    margin-bottom: 20px;
+  }
+
+  .promo__cta {
+    padding: 20px 0;
   }
 }

@@ -375,6 +375,7 @@ h4 {
 
 .promo {
   background-color: #fbfaf8;
+  padding-bottom: 0;
 }
 
 .promo__descr {
@@ -435,13 +436,13 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 28px;
-  padding-right: 28px;
+
 }
 
 .promo__cta h3 {
   font-family: "Raleway Regular", sans-serif;
   font-size: 28px;
+  line-height: 28px;
   color: #fff;
   margin-bottom: 8px;
 }
@@ -452,5 +453,11 @@ h4 {
 
 .promo__cta-text {
   font-size: 18px;
+  line-height: 18px;
   color: #615855;
+}
+
+.cta-button {
+  padding-left: 28px;
+  padding-right: 28px;
 }
