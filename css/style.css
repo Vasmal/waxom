@@ -74,10 +74,6 @@ section {
   margin-bottom: 18px;
 }
 
-section p {
-  
-}
-
 .section-descr {
   max-width: 757px;
   margin: 0 auto;
@@ -466,10 +462,6 @@ h4 {
 
 /*gallery*/
 
-.gallery {
-  padding-bottom: 50;
-}
-
 .gallery__tabs {
   max-width: 605px;
   margin: 0 auto;
@@ -505,6 +497,7 @@ h4 {
 .gallery__tabs .gallery__tab-active {
   background-color: #998675;
   color: #fff;
+  border-color: #998675;
 }
 
 .gallery__list {
@@ -620,4 +613,15 @@ h4 {
 
 .gallery__item:hover .gallery__item-descr {
   color: #c7b299;
+}
+
+.gallery__cta {
+  text-align: center;
+}
+
+.gallery__link {
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
