@@ -143,6 +143,10 @@
     text-align: center;
     margin-bottom: 40px;
   }
+
+  .gallery__item-wrap {
+    width: 48%;
+  }
 }
 
 @media (max-width: 740px) {
@@ -197,6 +201,14 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  .gallery {
+    padding-bottom: 10;
+  }
+
+  .gallery__item-wrap {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -244,6 +256,10 @@
     padding: 6px 12px;
   }
 
+  section {
+    padding: 40px 0;
+  }
+
   .services__item {
     margin-bottom: 40px;
   }
@@ -253,7 +269,7 @@
     line-height: 20px;
   }
 
-  section p {
+  .section-descr {
     font-size: 10px;
     line-height: 18px;
   }
