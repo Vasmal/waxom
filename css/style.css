@@ -492,6 +492,7 @@ h4 {
 .gallery__tabs button:active {
   background-color: #998675;
   color: #fff;
+  border-color: #998675;
 }
 
 .gallery__tabs .gallery__tab-active {
@@ -620,6 +621,7 @@ h4 {
 }
 
 .gallery__link {
+  margin: 0 auto;
   display: inline-block;
   margin-top: 10px;
   padding-left: 45px;
