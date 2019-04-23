@@ -25,5 +25,17 @@ $(document).ready(function () {
   });
 
   var mixer = mixitup('.gallery__list');
-  
+
+  //video-play settings 
+  $('.play-button').on('click', function () {
+    $('.video-wrap').addClass('played'),
+    $('.video-container video').get(0).play()
+  });
+
+  $('video').on('click', function (){
+    $('.video-container video').get(0).pause(),
+    $('.video-wrap').removeClass('played'),
+    console.log('ok');
+  });
+
 });

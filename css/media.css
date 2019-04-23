@@ -129,7 +129,7 @@
     margin-bottom: 30px;
   }
 
-  .button {
+  .slide__button {
     font-size: 12px;
     line-height: 18px;
     padding: 12px 24px;
@@ -209,7 +209,24 @@
   .gallery__item-wrap {
     width: 100%;
   }
+
+  .play-button {
+    width: 13.5%;
+    margin-bottom: 10px;
+  }
+
+  .video__title {
+    margin-bottom: 10px;
+  }
+
+  .video__descr {
+    margin-bottom: 15px;
+  }
 }
+
+
+
+
 
 @media (max-width: 480px) {
   .logo-link {
@@ -250,12 +267,6 @@
     margin-bottom: 10px;
   }
 
-  .button {
-    font-size: 8px;
-    line-height: 12px;
-    padding: 6px 12px;
-  }
-
   section {
     padding: 40px 0;
   }
@@ -290,5 +301,15 @@
 
   .promo__cta {
     padding: 20px 0;
+  }
+
+  .video__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .video__descr {
+    font-size: 10px;
+    line-height: 18px;
   }
 }
