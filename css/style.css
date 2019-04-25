@@ -714,3 +714,61 @@ h4 {
 .played {
   display: none;
 }
+
+/*features*/
+
+.features {
+  padding: 0;
+}
+
+.features__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__left {
+  width: 40%;
+  padding-top: 80px;
+}
+
+.features__img {
+  display: block;
+  width: 100%;
+  max-width: 423px;
+  margin-left: auto;
+  height: auto;
+}
+
+.features__right {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.features__title {
+  margin-bottom: 34px;
+}
+
+.features__descr {
+  text-align: left;
+  margin-bottom: 37px;
+}
+
+.features__item {
+  position: relative;
+  line-height: 32px;
+  color: #8c8c8c;
+  padding-left: 100px;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/features-item-icon.png);
+}
