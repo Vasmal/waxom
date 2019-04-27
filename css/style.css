@@ -772,3 +772,56 @@ h4 {
   height: 21px;
   background-image: url(../img/features-item-icon.png);
 }
+
+/*achievments*/
+
+.achievements {
+  padding: 69px 0 0;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.achievements__list {
+  max-width: 1030px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.achievments__item {
+  width: 100%;
+  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.achievments__item img {
+  margin-bottom: 30px;
+}
+
+.achievments__number {
+  font-family: "Montserrat Extra Light", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.achievments__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7b299;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.achievments__line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
