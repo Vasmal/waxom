@@ -268,7 +268,6 @@ h4 {
 }
 
 .header .slick-dots li button {
-
   width: 11px;
   height: 11px;
   border-radius: 50%;
@@ -527,19 +526,22 @@ h4 {
   height: auto;
 }
 
-.gallery__item-hover {
+.item-hover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(17, 17, 17, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+}
+
+.gallery__item-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery__item-link {
@@ -580,27 +582,33 @@ h4 {
   border-bottom: 10px solid #fbfaf8;
 }
 
-.gallery__item-title {
+.item-title {
   font-family: "Raleway Medium", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+}
+
+.gallery__item-title {
   color: #c7b299;
   margin-bottom: 7px;
 }
 
-.gallery__item-descr {
+.item-descr {
   font-size: 14px;
+}
+
+.gallery__item-descr {
   line-height: 20px;
   color: #d1d1d1;
 }
 
-.gallery__item:hover .gallery__item-hover {
+.item:hover .item-hover {
   visibility: visible;
   opacity: 1;
 }
 
-.gallery__item:hover .gallery__item-bottom {
+.item:hover .item-bottom {
   background-color: #362f2d;
 }
 
@@ -825,3 +833,192 @@ h4 {
   height: 2px;
   background-color: #fff;
 }
+
+/*posts*/
+
+.posts .posts__item {
+  flex-basis: 370px;
+  width: 100%;
+  max-width: 370px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.posts__date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+.posts__date span {
+  display: block;
+  color: #fff;
+}
+
+.posts__day {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 9px 0;
+  background-color: #363636;
+  border-radius: 3px 3px 0 0;
+}
+
+.posts__month {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 3px 0;
+  background-color: #252525;
+  border-radius: 0 0 3px 3px;
+}
+
+.posts__img {
+  position: relative;
+}
+
+.posts__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.posts__text-block {
+  padding: 30px 0 27px 30px;
+  background-color: #fbfaf8;
+}
+
+.posts__item-title {
+  color: #555;
+  margin-bottom: 11px;
+}
+
+.posts__item-descr {
+  line-height: 22px;
+  color: #8c8c8c;
+  margin-bottom: 13px;
+}
+
+.posts__link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7b299;
+  position: relative;
+  padding-right: 19px;
+}
+
+.posts__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 6px;
+  box-sizing: border-box;
+  width: 10px;
+  height: 8px;
+  border-left: 5px solid #c7b299;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+} 
+
+.posts__inner-slider:hover .item-hover {
+  display: none;
+}
+
+.posts__item:hover .posts__day{
+  background-color: #c7b299;
+}
+
+.posts__item:hover .posts__month {
+  background-color: #a48d72;
+}
+
+.posts__item:hover .posts__item-title {
+  color: #c7b299;
+}
+
+.posts__item:hover .posts__item-descr {
+  color: #fff;
+}
+
+/*posts slider*/
+
+.posts .slick-track {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts .slick-next,
+.posts .slick-prev {
+  top: 115%;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #c7b299;
+  border-radius: 50%;
+}
+
+.posts .slick-prev {
+  left: 50%;
+  transform: translateX(-26px);
+}
+
+.posts .slick-next {
+  right: 50%;
+  transform: translateX(26px);
+}
+
+.posts .slick-next::before,
+.posts .slick-prev::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  border-left: 2px solid #c7b299;
+  border-bottom: 2px solid #c7b299;
+  top: 4px;
+}
+
+.posts .slick-prev::before {
+  transform: rotate(45deg);
+  left: 6px;
+}
+
+.posts .slick-next::before {
+  transform: rotate(-135deg);
+  right: 6px;
+}
+
+/*posts__inner-slider settings*/
+
+.posts__inner-slider .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.posts__inner-slider .slick-dots {
+  bottom: 20px;
+}
+
+.posts__inner-slider .slick-dots li button {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.posts__inner-slider .slick-dots .slick-active button {
+  border: 2px solid #d3c1ad;
+  background-color: transparent;
+}
+
+.posts__inner-slider .slick-dots li {
+  width: auto;
+  height: auto;
+}
+
+/*partner
+

@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('.nav__menu').toggleClass('nav__menu-active')
   });
 
-  //header slider initialization
+  //header slider init
   $('.header__slider').slick({
     dots: true
   });
@@ -18,7 +18,7 @@ $(document).ready(function () {
     $(this).addClass('promo__item-active');
   });
   
-  //gallery mix it up initialization
+  //gallery mix it up init
   $('.gallery__tabs button').on('click', function(){
     $('.gallery__tabs button').removeClass('gallery__tab-active');
     $(this).addClass('gallery__tab-active');
@@ -37,5 +37,36 @@ $(document).ready(function () {
     $('.video-wrap').removeClass('played'),
     console.log('ok');
   });
+
+  //posts slider settings 
+
+  $('.posts__list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
+        breakpoint: 840,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
+  $('.posts__item-slider').slick({
+    arrows: false,
+    dots: true
+  })
 
 });
