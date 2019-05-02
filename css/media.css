@@ -107,6 +107,10 @@
   .header .slick-next {
     right: 50px;
   }
+
+  .footer-top__item {
+    width: 48%;
+  }
 }
 
 @media (max-width: 840px) {
@@ -343,6 +347,26 @@
 
   .achievements {
     padding: 40px 0 0;
+  }
+
+  .footer-top__item {
+    width: 100%;
+  }
+
+  .footer__item-title {
+    text-align: center;
+  }
+
+  .footer-top p {
+    text-align: justify;
+  }
+
+  .footer__widget-list {
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    padding: 40px 0;
   }
 
 }

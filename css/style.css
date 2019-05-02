@@ -1,5 +1,16 @@
 @import url(fonts.css);
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -1014,6 +1025,10 @@ h4 {
   opacity: 0.5;
 }
 
+.posts__inner-slider .slick-dots li button::before {
+  font-size: 0;
+}
+
 .posts__inner-slider .slick-dots .slick-active button {
   border: 2px solid #d3c1ad;
   background-color: transparent;
@@ -1059,4 +1074,141 @@ h4 {
   width: 100%;
   height: auto;
 }
+
+/*footer*/
+
+.footer {
+  background-color: #191919;
+}
+
+.footer-top{
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-top__item {
+  width: 23%;
+  
+}
+
+.footer-top p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #888;
+}
+
+.footer__logo-link {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.about-us__descr {
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.about-us__link {
+  color: #d1d1d1;
+  font-weight: 400;
+}
+
+.about-us__link:hover {
+  color: #c7b299;
+}
+
+.about-us__link:hover::after {
+  border-left-color: #c7b299;
+}
+
+.about-us__link::after {
+  border-left-color: #d1d1d1;
+}
+
+.footer__posts-item {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #252525;
+  margin-bottom: 16px;
+}
+
+.footer__posts-item:last-child {
+  border-bottom: 0;
+}
+
+.footer__posts-link {
+  display: block;
+}
+
+.footer__item-title {
+  font-family: "Raleway Bold", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 28px;
+  margin-bottom: 29px;
+}
+
+.footer-top span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+}
+
+.footer__posts-date {
+  margin-bottom: 3px;
+}
+
+.footer__posts-link:hover .footer__posts-date,
+.footer__posts-link:focus .footer__posts-date {
+  color: #fff;
+}
+
+.footer__posts-link:hover .footer__posts-descr,
+.footer__posts-link:focus .footer__posts-descr {
+  color: #c7b299;
+}
+
+.footer__tweets-descr a {
+  color: #00bff3;
+}
+.footer__tweets-descr .link {
+  color: #959595;
+}
+
+.footer__tweets-descr {
+  margin-bottom: 3px;
+}
+
+.footer__tweets-item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #252525;
+  margin-bottom: 16px;
+}
+
+.footer__tweets-item:last-child {
+  border-bottom: 0;
+}
+
+.footer__widget-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 270px;
+}
+
+.footer__widget-item {
+  width: 48%;
+  max-width: 130px;
+  margin-bottom: 10px;
+}
+
+.footer__widget-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
 
