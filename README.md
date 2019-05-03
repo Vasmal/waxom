@@ -1,1 +1,2 @@
 # waxom
+Adaptive html template
